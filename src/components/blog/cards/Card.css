@@ -1,0 +1,38 @@
+
+
+.Card-Container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 20%;
+    height: 20%;
+    background-color: #f8f3e8;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2), 0 0 40px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    padding: 1rem 1rem 2rem;
+    margin: 5%;
+}
+
+.Card-Container > img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 600/300;
+  }
+  
+  .Card-Container > h2 {
+    margin-top: 1rem;
+    font-family: "Kalam", cursive;
+    font-weight: normal;
+    font-size: 2rem;
+    color: #4a4a7d;
+    text-align: center;
+  }
+  
+  .Card-Container > p {
+    font-family: "Kalam", cursive;
+    font-size: 1rem;
+    color: #5e5e89;
+    text-align: center;
+  }
+  
