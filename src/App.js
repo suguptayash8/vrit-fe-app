@@ -3,6 +3,7 @@ import LoginPage from './components/login/LoginPage';
 import SignUp from './components/register/Register';
 import Home from './components/home/Home';
 import { useSelector } from 'react-redux';
+import CustomHeader from './components/header/Header';
 
 import {
   BrowserRouter as Router,
@@ -25,6 +26,8 @@ function App() {
   }
   return (
      <Router>
+      <CustomHeader>
+      </CustomHeader>
       <Routes>
        <Route exact path='/login' element={<LoginPage/>} ></Route>
        <Route exact path='/home' element={ <Home />}>/</Route>

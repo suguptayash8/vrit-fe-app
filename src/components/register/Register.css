@@ -28,7 +28,7 @@ a {
 	margin: 15px 0;
 }
 
-button {
+.register {
 	border-radius: 20px;
 	border: 1px solid #e8e4e4;
 	background-color: #FF4B2B;
@@ -97,6 +97,7 @@ input {
 	overflow: hidden;
     height: 290px;
 }
+
 .log-in-container {
     background: linear-gradient(to right, #FF4B2B, #FF416C);
     display: flex;

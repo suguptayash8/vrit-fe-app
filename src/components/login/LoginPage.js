@@ -14,7 +14,7 @@ const LoginPage = function(){
            <form>
 			<input type="email" placeholder="Email" onChange={(evt)=> userName = evt.target.value} />
 			<input type="password" placeholder="Password" onChange={(evt)=> password = evt.target.value} />
-            <button onClick={(e)=>{
+            <button className="login" onClick={(e)=>{
                 e.preventDefault();
                 LoginUser({
                     'username': userName,
@@ -28,7 +28,7 @@ const LoginPage = function(){
            </form>
            <div className="signup-container">
             <p> Sign up if new </p>
-            <button onClick={(e)=>{
+            <button className="login" onClick={(e)=>{
                 e.preventDefault();
                 window.location.href = '/sign-up';
             }}>SIGN UP</button>

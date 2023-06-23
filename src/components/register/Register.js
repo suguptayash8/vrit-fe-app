@@ -16,7 +16,7 @@ const SignUp = function(){
                 <input type="email" placeholder="Email" onChange={(evt)=> userEmail = evt.target.value} />
                 <input type="password" placeholder="Password" onChange={(evt)=> password = evt.target.value} />
                 <input type="password" placeholder="Confirm Password" onChange={(evt)=> confirmPassword = evt.target.value} />
-                <button onClick={(e)=>{
+                <button className="register" onClick={(e)=>{
                     e.preventDefault();
                     if(password === confirmPassword){
                         RegisterUser({
@@ -30,7 +30,7 @@ const SignUp = function(){
                </form>
                <div className="log-in-container">
                 <p> Sign in if already registered </p>
-                <button onClick={(e)=>{
+                <button className="register" onClick={(e)=>{
                     e.preventDefault();
                     window.location.href = '/login';
                 }}>SIGN IN</button>
@@ -41,7 +41,7 @@ const SignUp = function(){
         return (
             <div className="message-display">
             <p>Thank you, you have been Successfully registered</p>
-            <button onClick={(e)=> {
+            <button className="register" onClick={(e)=> {
                 e.preventDefault();
                 window.location.href = '/login';
             }}> SIGN IN</button>
