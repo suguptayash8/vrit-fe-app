@@ -11,7 +11,7 @@ function Card(){
         return ( <div className="Card-Container">
         <img src='https://picsum.photos/seed/picsum/200/300'></img>
         <h2>Generating electricity from atmospheric charge</h2>
-        <p>I strongly feel we can generate electricity by an inverted copper tree </p>
+        <p>We can look into it</p>
     </div>)
     }else{
         window.location.href = '/login';

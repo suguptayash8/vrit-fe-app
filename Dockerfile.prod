@@ -1,0 +1,11 @@
+FROM node:18-alpine as build
+WORKDIR /app
+COPY . /app
+RUN echo ls -ltra
+RUN echo $(pwd)
+ENV PATH /app/node_modules/.bin:$PATH
+RUN npm install
+RUN npm run build
+RUN mv ./build ./node/
+CMD node ./node/server.js
+EXPOSE 80
